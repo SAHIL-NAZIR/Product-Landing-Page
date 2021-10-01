@@ -140,6 +140,7 @@
 /* home */
 /* cards division */
 .cards-div{
+    margin-top: 75px;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 27%);
