@@ -75,7 +75,7 @@
             }
 /* HEADER */
 /* home */
-#home{
+#landing{
     background: url('images/bg-image.jpg') no-repeat 0, 0 linear-gradient(0.87deg, rgba(255, 190, 11, 0.45) 0.69%, rgba(251, 86, 7, 0.45) 100.47%, rgba(81, 38, 174, 0.21312) 100.48%, rgba(38, 92, 174, 0.00463075) 100.49%, rgba(195, 195, 196, 0.00234375) 100.5%);
     ;
     background-blend-mode: multiply;
@@ -140,36 +140,50 @@
 /* home */
 /* cards division */
 .cards-div{
-    margin-top: 75px;
     height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 27%);
-    grid-column-gap: 2%;
-    justify-content: space-evenly;
+    margin: 75px 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
         /* cards */
         .cards{
-            /* margin: 0 22px 0; */
+            margin: 0 1% 0;
+            height: 547px;
+            width: 399px;
+            display: flex;
+            flex-direction: column;
         }
-        /* card1 */
-            /* img of card1 */
-            /* div of card1 */
-                /* i of div of card1 */
-                /* span of div of card1 */
-        /* card2 */
-            /* img of card2 */
-            /* div of card2 */
-                /* i of div of card2 */
-                /* span of div of card2 */
-        /* card3 */
-            /* img of card3 */
-            /* div of card3 */
-                /* i of div of card3 */
-                /* span of div of card3 */
-
-
-
-
+        .cards img{
+            height: 414px;
+        }
+        .cards div{
+            height: 133px;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards div i{
+            height: 38px;
+            width: 38px;
+            background-color: var(--theme);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            margin-right: 32px;
+        }
+        .cards div span{
+            font-family: nunito, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .cards div:hover{
+            background-color: var(--theme);
+        }
 
 
 
